@@ -52,9 +52,6 @@
   }
 }
 /*----------------animacion-de-titulo-end---------*/
-
-
-
 /*----------------animacion-de-menu---------*/
 .nav__logo-menu {
   -webkit-animation-duration: 1s;
@@ -125,3 +122,8 @@
   color: #7a7c7ce4;
 }
 /*----------------animacion-de-menu--end-------*/
+/*----------------animacion-de-boton-card--------*/
+.card__btn:hover{
+  background: rgba(119, 85, 255, 0.542);
+}
+/*----------------animacion-de-boton-card-end-------*/
