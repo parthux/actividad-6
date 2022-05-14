@@ -52,7 +52,6 @@ body{
 }
 .nav__input:checked + .nav__links{
     display: inherit;
-    flex-wrap: wrap;
 }
 .nav__link{
     display: inherit;
