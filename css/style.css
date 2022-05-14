@@ -142,10 +142,10 @@ body{
 .card__title--form{
     font-size: 3rem;
 }
-.card__paragraph{
+.card__paragraph--from{
     font-size: 1.5rem;
 }
-.card__paragraph, .card__title--form{
+.card__paragraph--from, .card__title--form{
     text-align: center;
     font-weight: 700;
 }
