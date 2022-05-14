@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portal Noticia</title>
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title" title="Portal Noticia">
+            Portal Noticia
+        </h1>
+        <img src="icon/wave.svg" alt="" class="header__wave">
+    </header>
+    <nav class="nav">
+        <div class="nav__labels">
+            <label for="menu" class="nav__label">
+                <img src="icon/menu.svg" alt="" class="nav__logo-menu">
+            </label>
+        </div>
+        <input type="checkbox" id="menu" class="nav__input">
+        <div class="nav__links">
+            <a href="index.html" class="nav__link">
+                INICIO
+            </a>
+            <a href="suscribirse.html" class="nav__link">
+                SUSCRIBIRSE
+            </a>
+            <a href="" class="nav__link">
+                CONTACTO
+            </a>
+        </div>
+    </nav>
+    <main class="main">
+        <form action="" class="card card--form">
+                <h1 class="card__title card__title--form">
+                    Suscribite
+                </h1>
+                <p class="card__paragraph">
+                    Suscribite y leé Portal Noticias sin límites
+                </p>
+                <div class="card__estructure">
+                    <div class="card__color card__color-top">
+                    </div>
+                    <div class="card__color card__color-bottom">
+                    </div>
+                    <fieldset class="card__fielset">
+                        <input type="email" id="email" name="user-email" class="card__input" required>
+                        <label for="email" class="card__label">Email</label>
+                    </fieldset>
+                    <fieldset class="card__fielset">
+                        <input type="text" id="name" name="user-name" class="card__input" required>
+                        <label for="name" class="card__label">Nombre</label>
+                    </fieldset>
+                    <fieldset class="card__fielset">
+                        <input type="text" id="surname" name="user-surname" class="card__input" required>
+                        <label for="surmane" class="card__label">Apellido</label>
+                    </fieldset>
+                    <fieldset class="card__fielset">
+                        <input type="password" id="password" class="card__input" required>
+                        <label for="password" class="card__label">Contraseña</label>
+                    </fieldset>
+                </div>
+                <button type="submit" class="card__btn-from">Suscribirse</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <div class="footer__row">
+            <h3 class="footer__title">
+                Copyright 2022 Portal Noticias | Todos los derechos reservados
+            </h3>
+        </div>
+        <div class="footer__row">
+            <div class="footer__redes">
+                <a href="" class="footer__rede">
+                    <img src="icon/twitter.svg" alt="" class="footer__logo">
+                </a>
+                <a href="" class="footer__rede">
+                    <img src="icon/facebook.svg" alt="" class="footer__logo">
+                </a>
+                <a href="" class="footer__rede">
+                    <img src="icon/instagram.svg" alt="" class="footer__logo">
+                </a>
+                <a href="" class="footer__rede">
+                    <img src="icon/youtube.svg" alt="" class="footer__logo">
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

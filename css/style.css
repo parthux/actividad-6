@@ -95,6 +95,7 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 5px;
+    object-fit: cover;
 }
 .card__fecha{
     position: absolute;
@@ -116,7 +117,6 @@ body{
     display: block;
     margin: 0.5rem 0;
     padding-bottom: 0.5rem ;
-    object-fit: cover;
     border-bottom: 1px solid rgba(255, 255, 255, 0.867);
 }
 .card__btn{
@@ -133,7 +133,76 @@ body{
     text-decoration: none;
     box-shadow: 6px 20px 5px rgb(0 0 0 / 20%);
 }
+.card--form{
+    background-image: url('../img/suscribirse.avif');
+    background-size: cover;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+}
+.card__title--form{
+    font-size: 3rem;
+}
+.card__paragraph{
+    font-size: 1.5rem;
+}
+.card__paragraph, .card__title--form{
+    text-align: center;
+    font-weight: 700;
+}
+.card__estructure{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.867);
+    margin: 3rem 0;
+    position: relative;
+}
+.card__color{
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    background-size: cover;
+    height: 1rem;
+    width: 100%;
+    position: absolute;
+}
+.card__color-top{
+    top: 0;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+.card__color-bottom{
+    bottom: 0;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.card__fielset{
+    position: relative;
+    margin: 2rem;
+}
+.card__input{
+    background: none;
+    display: block;
+    border: none;
+    border-bottom: 1px solid #212529;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+.card__label{
+    position: absolute;
+    left: 0;
+    top:0.7rem;
+    color: #21252988;
+    transition: 1s ease-in-out all;
+    font-size: 1.2rem;
+}
+.card__btn-from{
+    background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+    padding: 0.7rem 3rem;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: white;
+}
 /*-----------------MAIN-END--------------*/
+/*-----------------FOOTER---------------*/
 .footer{
     margin-top: 3rem;
     border-top: 1px solid rgba(255, 255, 255, 0.867);
@@ -156,5 +225,5 @@ body{
 .footer__logo{
     width: 2rem;
 }
-
+/*-----------------FOOTER-END--------------*/
 

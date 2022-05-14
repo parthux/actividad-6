@@ -134,11 +134,26 @@
 .card__btn:hover{
   background: rgba(119, 85, 255, 0.542);
 }
+.card__btn-from:hover{
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.867);
+}
 /*----------------animacion-de-boton-card-end-------*/
+/*-------------animacion-de-input-card------*/
+.card__input:focus{
+  outline: none;
+}
+.card__input:focus + .card__label{
+  top: -1rem;
+  color: #212529;
+  font-size: 1rem;
+}
+.card__input:focus + .card__label, .card__input:valid + .card__label{
+  top: -1rem;
+}
+/*-------------animacion-de-input-card-end------*/
 /*-------------animacion-de-imagen-footer-------*/
 .footer__logo:hover{
   transition: 1s;
   transform: scale(1.5);
 }
 /*-------------animacion-de-imagen-card-end------*/
-
