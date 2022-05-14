@@ -105,6 +105,7 @@ body{
     height: 3.5rem;
     text-align: center;
     line-height: 1.1rem;
+    border-top-left-radius: 5px;
     background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
 }
 .card__end{
