@@ -86,6 +86,7 @@ body{
     padding: 1.5rem;
     box-shadow: 6px 20px 5px rgb(0 0 0 / 20%);
     font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
 }
 .card__header{
     position: relative;
@@ -226,4 +227,100 @@ body{
     width: 2rem;
 }
 /*-----------------FOOTER-END--------------*/
+@media screen and (min-width: 768px){
+    .main{
+        flex-flow: row wrap;
+    }
+    .card{
+        flex: 40%;
+        margin-top:0;
+        margin: 1rem;
+    }
+}
 
+@media screen and (min-width: 1024px){
+    .nav__labels{
+        display: none;
+    }
+    .nav__links{
+        display: inherit;
+    }
+    .main{
+        flex-flow: column;
+    }
+    .card{
+        flex-direction: row;
+    }
+    .card--form{
+        flex-direction: column;
+    }
+    .card__header{
+        flex: 40%;
+        margin-right: 1rem;
+    }
+    .card__end{
+        flex: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+    .card__title{
+        text-decoration: underline;
+        border-bottom: none;
+        margin-bottom: 1rem;
+    }
+    .card__btn{
+        margin-top: 3rem;
+    }
+    .footer{
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    .footer__title{
+        margin-left: 1rem;
+    }
+}
+
+/*
+.card__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.card__fecha{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 2.5rem;
+    height: 3.5rem;
+    text-align: center;
+    line-height: 1.1rem;
+    border-top-left-radius: 5px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+.card__end{
+    text-align: center;
+}
+.card__title{
+    font-size: 1.5rem;
+    display: block;
+    margin: 0.5rem 0;
+    padding-bottom: 0.5rem ;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.867);
+}
+.card__btn{
+    display: block;
+    background: #75F;
+    font-weight: bold;
+    min-width: 5rem;
+    color: #FFF;
+    transition: background 0.5s, color 0.5s, transform 0.5s;
+    margin: 2rem 3rem 1rem 3rem;
+    padding: 1rem 2.5rem;
+    border-radius: 3px;
+    box-shadow: 0px 2px 4px rgb(0 0 0 / 50%);
+    text-decoration: none;
+    box-shadow: 6px 20px 5px rgb(0 0 0 / 20%);
+}
+*/
