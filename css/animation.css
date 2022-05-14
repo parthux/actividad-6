@@ -122,8 +122,23 @@
   color: #7a7c7ce4;
 }
 /*----------------animacion-de-menu--end-------*/
+/*----------------animacion-de-imagen-card-------*/
+.card__img:hover{
+  transition: 1s;
+  transform: scale(1.1);
+  position: relative;
+  z-index: 110;
+}
+/*-------------animacion-de-imagen-card-end------*/
 /*----------------animacion-de-boton-card--------*/
 .card__btn:hover{
   background: rgba(119, 85, 255, 0.542);
 }
 /*----------------animacion-de-boton-card-end-------*/
+/*-------------animacion-de-imagen-footer-------*/
+.footer__logo:hover{
+  transition: 1s;
+  transform: scale(1.5);
+}
+/*-------------animacion-de-imagen-card-end------*/
+
