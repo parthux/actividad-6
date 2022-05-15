@@ -37,6 +37,7 @@ body{
     display: flex;
     justify-content: center;
     margin: 0.5rem 0 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.867);
 }
 .nav__label{
     display: inherit;
@@ -64,14 +65,14 @@ body{
     align-items: center;
 }
 /*-----------------END---------------*/
-/*-----------------MAIN---------------*/
+/*-----------------MAIN--------------------------------------------*/
 .main{
-    border-top: 1px solid rgba(255, 255, 255, 0.867);
     width: 100%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
+/*-----------------MAIN-CARD-------------------------*/
 .card{
     width: 90%;
     display: inherit;
@@ -133,6 +134,8 @@ body{
     text-decoration: none;
     box-shadow: 6px 20px 5px rgb(0 0 0 / 20%);
 }
+/*-----------------MAIN-CARD--END------------------------*/
+/*-----------------MAIN-CARD--FORM-----------------------*/
 .card--form{
     background-image: url('../img/suscribirse.avif');
     background-size: cover;
@@ -202,7 +205,8 @@ body{
     color: white;
     border: transparent;
 }
-/*-----------------MAIN-END--------------*/
+/*-----------------MAIN-CARD--FORM-END-----------*/
+/*-----------------MAIN-END------------------------------*/
 /*-----------------FOOTER---------------*/
 .footer{
     margin-top: 3rem;
@@ -228,26 +232,36 @@ body{
 }
 /*-----------------FOOTER-END--------------*/
 @media screen and (min-width: 768px){
+    /*-----------------MAIN-----------------*/
     .main{
         flex-flow: row wrap;
+        align-items: normal;
     }
+    /*-----------------MAIN-END----------------*/
+    /*-----------------CARD-----------------*/
     .card{
         flex: 40%;
         margin-top:0;
         margin: 1rem;
     }
+    /*-----------------CARD--END---------------*/
 }
 
 @media screen and (min-width: 1024px){
+    /*-----------------NAV-MOBILE-----------------*/
     .nav__labels{
         display: none;
     }
     .nav__links{
         display: inherit;
     }
+    /*-----------------NAV-MOBILE-END----------------*/
+    /*-----------------MAIN---------------------------*/
     .main{
         flex-flow: column;
+        align-items: center;
     }
+    /*-----------------CARD-----------------*/
     .card{
         flex-direction: row;
     }
@@ -271,6 +285,9 @@ body{
     .card__btn{
         margin-top: 3rem;
     }
+    /*-----------------CARD-END--------------*/
+    /*-----------------MAIN-END------------------*/
+    /*-----------------FOOTER--------------*/
     .footer{
         flex-flow: row;
         justify-content: space-between;
@@ -278,49 +295,5 @@ body{
     .footer__title{
         margin-left: 1rem;
     }
+    /*-----------------FOOTER-END--------------*/
 }
-
-/*
-.card__img{
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    object-fit: cover;
-}
-.card__fecha{
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    width: 2.5rem;
-    height: 3.5rem;
-    text-align: center;
-    line-height: 1.1rem;
-    border-top-left-radius: 5px;
-    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
-}
-.card__end{
-    text-align: center;
-}
-.card__title{
-    font-size: 1.5rem;
-    display: block;
-    margin: 0.5rem 0;
-    padding-bottom: 0.5rem ;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.867);
-}
-.card__btn{
-    display: block;
-    background: #75F;
-    font-weight: bold;
-    min-width: 5rem;
-    color: #FFF;
-    transition: background 0.5s, color 0.5s, transform 0.5s;
-    margin: 2rem 3rem 1rem 3rem;
-    padding: 1rem 2.5rem;
-    border-radius: 3px;
-    box-shadow: 0px 2px 4px rgb(0 0 0 / 50%);
-    text-decoration: none;
-    box-shadow: 6px 20px 5px rgb(0 0 0 / 20%);
-}
-*/
