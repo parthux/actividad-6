@@ -46,7 +46,6 @@ body{
 .nav__logo-menu{
     width: 3.5rem;
     height: 3rem;
-
 }
 .nav__links, .nav__input{
     display: none;
@@ -64,11 +63,18 @@ body{
     transition: 1s;
     align-items: center;
 }
-/*-----------------END---------------*/
+/*----------------NAV-END---------------*/
+/*-----------------FLEX---------------*/
+.flex{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+/*-----------------FLEX-END---------------*/
 /*-----------------MAIN--------------------------------------------*/
 .main{
-    width: 100%;
-    display: flex;
+    flex: 100%;
+    display: inherit;
     flex-flow: column nowrap;
     align-items: center;
 }
@@ -207,6 +213,12 @@ body{
 }
 /*-----------------MAIN-CARD--FORM-END-----------*/
 /*-----------------MAIN-END------------------------------*/
+/*-----------------ASIDE-------------------------------*/
+.aside{
+    flex: 100%;
+    justify-content: center;
+}
+/*-----------------ASIDE-END------------------------------*/
 /*-----------------FOOTER---------------*/
 .footer{
     margin-top: 3rem;
@@ -232,6 +244,8 @@ body{
 }
 /*-----------------FOOTER-END--------------*/
 @media screen and (min-width: 768px){
+    /*-----------------FLEX-----------------*/
+    /*-----------------FLEX--END---------------*/
     /*-----------------MAIN-----------------*/
     .main{
         flex-flow: row wrap;
@@ -244,9 +258,12 @@ body{
         margin-top:0;
         margin: 1rem;
     }
+    .card--aside{
+        flex: 100%;
+        height: 100vh;
+    }
     /*-----------------CARD--END---------------*/
 }
-
 @media screen and (min-width: 1024px){
     /*-----------------NAV-MOBILE-----------------*/
     .nav__labels{
@@ -256,10 +273,20 @@ body{
         display: inherit;
     }
     /*-----------------NAV-MOBILE-END----------------*/
+    /*-----------------FLEX-----------------*/
+    .flex{
+        flex-flow: row wrap;
+        align-items: normal;
+    }
+    /*-----------------FLEX--END---------------*/
     /*-----------------MAIN---------------------------*/
     .main{
         flex-flow: column;
         align-items: center;
+        flex: 60%;
+    }
+    .main:nth-child(1){
+        order: 2;
     }
     /*-----------------CARD-----------------*/
     .card{
@@ -285,6 +312,18 @@ body{
     .card__btn{
         margin-top: 3rem;
     }
+    /*-----------------ASIDE-----------------*/
+    .aside{
+        flex:20%;
+        justify-content: normal;
+    }
+    .aside--row1:nth-child(2){
+        order: 1;
+    }
+    .aside--row2:nth-child(3){
+        order: 3;
+    }
+    /*-----------------ASIDE--END---------------*/
     /*-----------------CARD-END--------------*/
     /*-----------------MAIN-END------------------*/
     /*-----------------FOOTER--------------*/
