@@ -78,6 +78,9 @@ body{
     flex-flow: column nowrap;
     align-items: center;
 }
+.main--form{
+    display: flex;
+}
 /*-----------------MAIN-CARD-------------------------*/
 .card{
     width: 90%;
