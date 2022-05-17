@@ -216,6 +216,10 @@ body{
     height: 100%;
     text-align: center;
 }
+.card__title--aside-h2{
+    border:none;
+    text-decoration: underline;
+}
 .card__cta{
     text-decoration: none;
     color: inherit;
