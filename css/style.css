@@ -67,7 +67,7 @@ body{
 /*-----------------FLEX---------------*/
 .flex{
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     align-items: center;
 }
 /*-----------------FLEX-END---------------*/
@@ -75,7 +75,7 @@ body{
 .main{
     flex: 100%;
     display: inherit;
-    flex-flow: column nowrap;
+    flex-direction: inherit;
     align-items: center;
 }
 /*-----------------MAIN-CARD-------------------------*/
@@ -84,9 +84,7 @@ body{
     display: inherit;
     flex-direction: column;
     border: 1px solid transparent;
-    background-color: #212529a6;
     margin-top: 2rem;
-    align-items: center;
     color: #fff;
     border-radius: 5px;
     background-color: rgba(50, 46, 46, 0.388);
@@ -102,7 +100,6 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 5px;
-    object-fit: cover;
 }
 .card__fecha{
     position: absolute;
@@ -146,6 +143,7 @@ body{
     background-size: cover;
     height: 100vh;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
 }
 .card__title--form{
@@ -212,20 +210,42 @@ body{
 }
 /*-----------------MAIN-CARD--FORM-END-----------*/
 /*-----------------MAIN-END------------------------------*/
-/*-----------------ASIDE-------------------------------*/
+/*-----------------ASIDE----------------------------------------*/
+/*-----------------ASIDE--CARD-----------------------------*/
+.card--aside{
+    height: 100%;
+    text-align: center;
+}
+.card__cta{
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.867);
+}
+.card__title--h3{
+    font-size: 1.2rem;
+    border: none;
+}
+/*-----------------ASIDE--END-----------------------------*/
 .aside{
     flex: 100%;
-    margin-top: 2rem;
     display: inherit;
+    margin-top: 1rem;
+}
+.aside--row1{
     flex-flow: row wrap;
     justify-content: center;
+}
+.aside--row2{
+    flex-direction: column;
+    align-items: center;
 }
 .aside__btn-publicity{
     display: block;
     margin:1rem;
 }
 .aside__publicity-img{
-    width: 90%;
     border-radius: 10px;
     box-shadow: 6px 20px 5px rgb(0 0 0 / 20%);
     width: 10rem;
@@ -307,12 +327,11 @@ body{
     .card{
         flex-direction: row;
     }
+    /*-------FORM-------*/
     .card--form{
         flex-direction: column;
     }
-    .card--aside{
-        flex-direction: column;
-    }
+    /*-------FORM--END-----*/
     .card__header{
         flex: 40%;
         margin-right: 1rem;
@@ -331,10 +350,18 @@ body{
         margin-top: 3rem;
     }
     /*-----------------ASIDE-----------------*/
+    /*-----------------ASIDE-CARD---------*/
+    .card--aside{
+        flex-direction: column;
+    }
+    .card__title--h3{
+        text-decoration: none;
+    }
+    /*-----------------ASIDE-END---------*/
     .aside{
         flex:10%;
         justify-content: normal;
-        margin: 1rem;
+        margin: 0;
     }
     .aside--row1:nth-child(2){
         order: 1;
@@ -342,9 +369,7 @@ body{
     }
     .aside--row2:nth-child(3){
         order: 3;
-    }
-    .aside{
-        margin: 0;
+        height: 100%;
     }
     .aside__publicity-img{
         width: 100%;

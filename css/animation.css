@@ -151,6 +151,12 @@
   top: -1rem;
 }
 /*-------------animacion-de-input-card-end------*/
+/*-------------animacion-de-h3-card-------------*/
+.card__title--h3:hover{
+  text-decoration: underline;
+  color: #7a7c7ce4;
+}
+/*-------------animacion-de-h3-card--end--------*/
 /*-------------animacion-de-imagen-footer-------*/
 .footer__logo:hover{
   transition: 1s;
